@@ -28,6 +28,7 @@
 #let cap = sym.inter
 #let qed = sym.square.stroked
 #let tensor = sym.times.circle
+#let varphi = sym.phi.alt
 #let fsq = $1/sqrt(2)$
 #let inv = -1
 
