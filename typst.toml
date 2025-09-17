@@ -1,0 +1,8 @@
+[package]
+name = "lalatypst"
+version = "0.0.1"
+entrypoint = "lalatypst.typ"
+authors = ["L.A. LaBuff"]
+license = "MIT"
+description = "Collection of Typst macros for personal use"
+repository = "https://github.com/96-LB/lalatypst"
