@@ -40,7 +40,7 @@
 #let inner(..args) = $lr(angle.l #cm(..args) angle.r)$
 #let bra(..args) = $lr(angle.l#cm(..args)|)$
 #let ket(..args) = $lr(|#cm(..args)angle.r)$
-#let braket(a, b) = $inner(#a|#b)$
+#let braket(a, b) = $inner(#a #x | #x #b)$
 #let ketbra(a, b) = $lr(|#a angle.r #h(-.1em) angle.l #b|)$
 
 #let kup = $ket(up)$
