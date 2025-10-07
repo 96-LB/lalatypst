@@ -2,6 +2,7 @@
 #let q = tequila
 
 #let x = h(0pt, weak: true)
+#let qquad = h(2em)
 
 #let i = emph
 #let b = strong
@@ -80,6 +81,8 @@
     #h(1fr) $qed$
 ]
 #let sol(..args) = statement("Solution", ..args, color: rgb("#f1f1f141"), format: i)
+
+#let numberedequation(number, body) = math.equation(body, block: true, numbering: x => "(" + number + ")")
 
 #let pdflink(url) = (page, scroll, body) => link(str(url) + "#page=" + str(page) + "&zoom=100,96," + str(scroll), body)
 
