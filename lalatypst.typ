@@ -30,6 +30,7 @@
 #let qed = sym.square.stroked
 #let tensor = sym.times.circle
 #let varphi = sym.phi.alt
+#let vareps = sym.epsilon.alt
 #let fsq = $1/sqrt(2)$
 #let inv = -1
 
