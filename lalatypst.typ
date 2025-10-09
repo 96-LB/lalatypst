@@ -87,6 +87,7 @@
 
 #let pdflink(url) = (page, scroll, body) => link(str(url) + "#page=" + str(page) + "&zoom=100,96," + str(scroll), body)
 
+
 #let document-as-homework(document) = {
     show heading.where(level: 1): x => {
         pagebreak(weak: true)
@@ -94,6 +95,7 @@
     }
     show link: it => text(rgb("#00f"))[#it]
     set enum(numbering: "(a)")
+    set cite(style: "alphanumeric")
     
     document
 }
@@ -104,6 +106,7 @@
         emoji.calendar.spiral + underline(x.body)
     }
     show link: it => text(rgb("#00f"))[#it]
+    set cite(style: "alphanumeric")
     
     document
 }
