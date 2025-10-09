@@ -96,6 +96,7 @@
     show link: it => text(rgb("#00f"))[#it]
     set enum(numbering: "(a)")
     set cite(style: "alphanumeric")
+    show cite: it => text(rgb("#009618"))[#it]
     
     document
 }
@@ -107,6 +108,7 @@
     }
     show link: it => text(rgb("#00f"))[#it]
     set cite(style: "alphanumeric")
+    show cite: it => text(rgb("#009618"))[#it]
     
     document
 }
