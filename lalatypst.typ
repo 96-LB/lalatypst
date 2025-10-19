@@ -14,7 +14,7 @@
 #let P = $sans(P)$
 #let NP = $sans(N P)$
 #let BPP = $sans(B P P)$
-#let CNOT = $#x "CNOT" #x$
+#let CNOT = $op("CNOT")$
 #let Var = $op("Var")$
 #let Re = $op("Re")$
 #let Im = $op("Im")$
