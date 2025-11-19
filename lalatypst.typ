@@ -28,7 +28,7 @@
 #let conj = math.overline
 #let cap = sym.inter
 #let qed = sym.square.stroked
-#let tensor = sym.times.circle
+#let tensor = sym.times.o
 #let varphi = sym.phi.alt
 #let vareps = sym.epsilon.alt
 #let fsq = $1/sqrt(2)$
@@ -39,11 +39,11 @@
 #let down = sym.arrow.double.b
 
 #let cm(..args) = $#args.pos().map(y => $#y$).join(", ")$
-#let inner(..args) = $lr(angle.l #cm(..args) angle.r)$
-#let bra(..args) = $lr(angle.l#cm(..args)|)$
-#let ket(..args) = $lr(|#cm(..args)angle.r)$
+#let inner(..args) = $lr(chevron.l #cm(..args) chevron.r)$
+#let bra(..args) = $lr(chevron.l#cm(..args)|)$
+#let ket(..args) = $lr(|#cm(..args)chevron.r)$
 #let braket(a, b) = $inner(#a #x | #x #b)$
-#let ketbra(a, b) = $lr(|#a angle.r #h(-.1em) angle.l #b|)$
+#let ketbra(a, b) = $lr(|#a chevron.r #h(-.1em) chevron.l #b|)$
 
 #let kup = $ket(up)$
 #let kdown = $ket(down)$
