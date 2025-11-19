@@ -21,6 +21,7 @@
 #let PSD = $op("PSD")$
 #let Tr = $op("Tr")$
 #let span = $op("span")$
+#let poly = $op("poly")$
 
 #let XOR = sym.xor.big
 #let iso = sym.tilde.equiv
