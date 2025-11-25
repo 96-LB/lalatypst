@@ -35,7 +35,7 @@
 #let fsq = $1/sqrt(2)$
 #let inv = -1
 
-#let hbar = (sym.wj, move(dy: -0.08em, strike(offset: -0.55em, extent: -0.05em, sym.planck)), sym.wj).join()
+#let hbar = (sym.wj, move(dy: -0.08em, strike(offset: -0.55em, extent: -0.05em, "ℎ")), sym.wj).join()
 #let up = sym.arrow.double.t
 #let down = sym.arrow.double.b
 
