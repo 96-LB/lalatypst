@@ -46,6 +46,9 @@
 #let braket(a, b) = $inner(#a #x | #x #b)$
 #let ketbra(a, b) = $lr(|#a chevron.r #h(-.1em) chevron.l #b|)$
 
+#let kets(..args) = args.pos().map(x => $ket(#x)$).join()
+#let bras(..args) = args.pos().map(x => $bra(#x)$).join()
+
 #let kup = $ket(up)$
 #let kdown = $ket(down)$
 #let bup = $bra(up)$
