@@ -39,6 +39,9 @@
 #let up = sym.arrow.double.t
 #let down = sym.arrow.double.b
 
+#let norm(x, y) = calc.sqrt(x * x + y * y)
+#let dist((x1, y1), (x2, y2)) = norm(x2 - x1, y2 - y1)
+
 #let cm(..args) = $#args.pos().map(y => $#y$).join(", ")$
 #let inner(..args) = $lr(chevron.l #cm(..args) chevron.r)$
 #let bra(..args) = $lr(chevron.l#cm(..args)|)$
