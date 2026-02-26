@@ -93,7 +93,7 @@
 
 #let pdflink(url) = (page, scroll, body) => link(str(url) + "#page=" + str(page) + "&zoom=100,96," + str(scroll), body)
 
-#let namedpdflink(url) = (dest) => link(str(url) + "#page=" + str(page) + "&nameddest=" + str(dest), body)
+#let namedpdflink(url) = (dest, body) => link(str(url) + "#nameddest=" + str(dest), body)
 
 
 #let document-as-homework(document) = {
